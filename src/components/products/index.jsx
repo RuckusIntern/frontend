@@ -22,10 +22,11 @@ import Switch from '@mui/material/Switch';
 import { visuallyHidden } from '@mui/utils';
 import { GlobalFilter } from "./globalFilter";
 import Button from '@mui/material/Button';
+import cveData from "./data.json"
 
 export function Products(props) {
   const [products, setProducts] = useState([])
-
+  const [cve, setCve] = useState(cveData)
   const fetchProducts = async () => {
     const response = await axios
       .get("https://fakestoreapi.com/products")
@@ -37,25 +38,6 @@ export function Products(props) {
       console.log("Products: ", products)
       setProducts(products);
     }
-  }
-  const [data, setData] = useState([])
-  const getData=()=>{
-    fetch('data.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        setData(myJson)
-      });
   }
 
 //   const data = useMemo(
@@ -121,25 +103,25 @@ export function Products(props) {
 //     []
 //   );
 
-  const productsData = useMemo(() => [...products], [products]);
+  const productsData = useMemo(() => [...cve], [cve]);
 
   const productsColumns = useMemo(
     () =>
-      products[0]
-        ? Object.keys(products[0])
-            .filter((key) => key !== "rating")
+      cve[0]
+        ? Object.keys(cve[0])
+            .filter((key) => key !== "errata" && key !== "package_state")
             .map((key) => {
-                if (key === "image")
-                    return {
-                    Header: key,
-                    accessor: key,
-                    Cell: ({ value }) => <img src={value} Width = {70} alt = "product pic"/>
-                    }
+                // if (key === "image")
+                //     return {
+                //     Header: key,
+                //     accessor: key,
+                //     Cell: ({ value }) => <img src={value} Width = {70} alt = "product pic"/>
+                //     }
 
               return { Header: key, accessor: key };
             })
         : [],
-    [products]
+    [cve]
   );
 
   const tableHooks = (hooks) => {
@@ -149,8 +131,8 @@ export function Products(props) {
         id: "View",
         Header: "View",
         Cell: ({ row }) => (
-          <Button variant="outlined" size="small" onClick={() => alert("Viewing: " + row.values.price)}>
-            View Price
+          <Button variant="outlined" size="small" onClick={() => alert("Viewing: " + row.values.package)}>
+            View Package
           </Button>
         ),
       },
@@ -179,7 +161,7 @@ export function Products(props) {
   } = tableInstance;
 
   useEffect(() => {
-    getData();
+    fetchProducts();
   }, []);
 
   const isEven = (idx) => idx % 2 === 0;
