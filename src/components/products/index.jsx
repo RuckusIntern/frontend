@@ -24,20 +24,39 @@ import { GlobalFilter } from "./globalFilter";
 import Button from '@mui/material/Button';
 
 export function Products(props) {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([])
 
   const fetchProducts = async () => {
     const response = await axios
       .get("https://fakestoreapi.com/products")
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
 
     if (response) {
-      const products = response.data;
+      const products = response.data
 
-      console.log("Products: ", products);
+      console.log("Products: ", products)
       setProducts(products);
     }
-  };
+  }
+  const [data, setData] = useState([])
+  const getData=()=>{
+    fetch('data.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
 
 //   const data = useMemo(
 //     () => [
@@ -160,7 +179,7 @@ export function Products(props) {
   } = tableInstance;
 
   useEffect(() => {
-    fetchProducts();
+    getData();
   }, []);
 
   const isEven = (idx) => idx % 2 === 0;
