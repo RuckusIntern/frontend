@@ -1,28 +1,29 @@
-import axios from "axios";
-import React, { useEffect, useMemo, useState } from "react";
-import { useGlobalFilter, useSortBy, useTable } from "react-table";
-import { alpha } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TablePagination from '@mui/material/TablePagination';
-import TableRow from '@mui/material/TableRow';
-import TableSortLabel from '@mui/material/TableSortLabel';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import Checkbox from '@mui/material/Checkbox';
-import IconButton from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Switch from '@mui/material/Switch';
-import { visuallyHidden } from '@mui/utils';
-import { GlobalFilter } from "./globalFilter";
-import Button from '@mui/material/Button';
+import axios from "axios"
+import React, { useEffect, useMemo, useState } from "react"
+import { useGlobalFilter, useSortBy, useTable } from "react-table"
+import { alpha } from '@mui/material/styles'
+import Box from '@mui/material/Box'
+import Table from '@mui/material/Table'
+import TableBody from '@mui/material/TableBody'
+import TableCell from '@mui/material/TableCell'
+import TableContainer from '@mui/material/TableContainer'
+import TableHead from '@mui/material/TableHead'
+import TablePagination from '@mui/material/TablePagination'
+import TableRow from '@mui/material/TableRow'
+import TableSortLabel from '@mui/material/TableSortLabel'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
+import Paper from '@mui/material/Paper'
+import Checkbox from '@mui/material/Checkbox'
+import IconButton from '@mui/material/IconButton'
+import Tooltip from '@mui/material/Tooltip'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Switch from '@mui/material/Switch'
+import { visuallyHidden } from '@mui/utils'
+import { GlobalFilter } from "./globalFilter"
+import Button from '@mui/material/Button'
 import cveData from "./data.json"
+import { TextField } from "@mui/material"
 
 export function Products(props) {
   const [products, setProducts] = useState([])
@@ -36,7 +37,7 @@ export function Products(props) {
       const products = response.data
 
       console.log("Products: ", products)
-      setProducts(products);
+      setProducts(products)
     }
   }
 
@@ -83,7 +84,7 @@ export function Products(props) {
 //       },
 //     ],
 //     []
-//   );
+//   )
 
 //   const columns = useMemo(
 //     () => [
@@ -101,7 +102,7 @@ export function Products(props) {
 //       },
 //     ],
 //     []
-//   );
+//   )
 
   const productsData = useMemo(() => [...cve], [cve]);
 
@@ -122,22 +123,41 @@ export function Products(props) {
             })
         : [],
     [cve]
-  );
+  )
+  const Comment = (word) => {
+    word.visibleColumns.push((columns) => [
+      ...columns,
+      {
+        id: "Comment",
+        Header: "Comment",
+        Cell: ({ row }) => (
+            <TextField fullWidth 
+            id="outlined-multiline-static"
+            label="Info"
+            multiline
+            rows={4}
+            defaultValue="..."
+            size="medium"
+          />
+        ),
+      },
+    ])
+  }
 
   const tableHooks = (hooks) => {
     hooks.visibleColumns.push((columns) => [
       ...columns,
       {
-        id: "View",
-        Header: "View",
+        id: "Edit",
+        Header: "Edit",
         Cell: ({ row }) => (
-          <Button variant="outlined" size="small" onClick={() => alert("Viewing: " + row.values.package)}>
-            View Package
+          <Button variant="outlined" size="small" onClick={() => alert("Succuss to leave your comment on " + row.values.package)}>
+            Edit Comment
           </Button>
         ),
       },
-    ]);
-  };
+    ])
+  }
 
   const tableInstance = useTable(
     {
@@ -145,9 +165,10 @@ export function Products(props) {
       data: productsData,
     },
     useGlobalFilter,
+    Comment,
     tableHooks,
     useSortBy
-  );
+  )
 
   const {
     getTableProps,
@@ -158,22 +179,22 @@ export function Products(props) {
     preGlobalFilteredRows,
     setGlobalFilter,
     state,
-  } = tableInstance;
+  } = tableInstance
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [])
 
-  const isEven = (idx) => idx % 2 === 0;
+  const isEven = (idx) => idx % 2 === 0
 
   return (
-    <Paper variant="outlined" square sx={{display: 'flex', flexWrap: 'wrap', width: '100%', height: '100%' }}>
+    <Paper sx={{display: 'flex', flexWrap: 'wrap', width: '100%', maxHeight: '60%' }}>
       <GlobalFilter 
         preGlobalFilteredRows={preGlobalFilteredRows}
         setGlobalFilter={setGlobalFilter}
         globalFilter={state.globalFilter}
       />
-      <TableContainer sx={{ maxHeight: 440 }}>
+      <TableContainer sx={{display: 'flex', flexWrap: 'wrap', width: '100%', maxHeight: 440 }}>
         <Table {...getTableProps()}>
             <TableHead>
             {headerGroups.map((headerGroup) => (
@@ -197,16 +218,16 @@ export function Products(props) {
                     className={isEven(idx) ? "bg-green-400 bg-opacity-30" : ""}
                 >
                     {row.cells.map((cell, idx) => (
-                    <TableCell align="center" {...cell.getCellProps()}>
+                    <TableCell align="center" size="medium" {...cell.getCellProps()}>
                         {cell.render("Cell")}
                     </TableCell>
                     ))}
                 </TableRow>
-                );
+                )
             })}
             </TableBody>
         </Table>
       </TableContainer>
     </Paper>
-  );
+  )
 }
