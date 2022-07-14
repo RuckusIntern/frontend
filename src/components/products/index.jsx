@@ -14,6 +14,7 @@ import TableSortLabel from '@mui/material/TableSortLabel'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
+import Collapse from '@mui/material/Collapse';
 import Checkbox from '@mui/material/Checkbox'
 import IconButton from '@mui/material/IconButton'
 import Tooltip from '@mui/material/Tooltip'
@@ -25,50 +26,26 @@ import Button from '@mui/material/Button'
 import cveData from "./data.json"
 import { TextField } from "@mui/material"
 
+
 export function Products(props) {
-  const [products, setProducts] = useState([])
   const [cve, setCve] = useState(cveData)
-  const fetchProducts = async () => {
-    const response = await axios
-      .get("https://fakestoreapi.com/products")
-      .catch((err) => console.log(err))
 
-    if (response) {
-      const products = response.data
+  // const [products, setProducts] = useState([])
+  // const fetchProducts = async () => {
+  //   const response = await axios
+  //     .get("https://fakestoreapi.com/products")
+  //     .catch((err) => console.log(err))
 
-      console.log("Products: ", products)
-      setProducts(products)
-    }
-  }
+  //   if (response) {
+  //     const products = response.data
+
+  //     console.log("Products: ", products)
+  //     setProducts(products)
+  //   }
+  // }
 
 //   const data = useMemo(
 //     () => [
-//       {
-//         id: 1,
-//         title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-//         price: 109.95,
-//         description:
-//           "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-//         category: "men's clothing",
-//         image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-//         rating: {
-//           rate: 3.9,
-//           count: 120,
-//         },
-//       },
-//       {
-//         id: 1,
-//         title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-//         price: 109.95,
-//         description:
-//           "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-//         category: "men's clothing",
-//         image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-//         rating: {
-//           rate: 3.9,
-//           count: 120,
-//         },
-//       },
 //       {
 //         id: 1,
 //         title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -105,7 +82,7 @@ export function Products(props) {
 //   )
 
   const productsData = useMemo(() => [...cve], [cve]);
-
+  const [open, setOpen] = React.useState(false);
   const productsColumns = useMemo(
     () =>
       cve[0]
@@ -124,6 +101,7 @@ export function Products(props) {
         : [],
     [cve]
   )
+
   const Comment = (word) => {
     word.visibleColumns.push((columns) => [
       ...columns,
@@ -138,6 +116,7 @@ export function Products(props) {
             rows={4}
             defaultValue="..."
             size="medium"
+            style={{ minWidth: 300 }}
           />
         ),
       },
@@ -158,7 +137,7 @@ export function Products(props) {
       },
     ])
   }
-
+  
   const tableInstance = useTable(
     {
       columns: productsColumns,
@@ -181,9 +160,9 @@ export function Products(props) {
     state,
   } = tableInstance
 
-  useEffect(() => {
-    fetchProducts();
-  }, [])
+  // useEffect(() => {
+  //   fetchProducts();
+  // }, [])
 
   const isEven = (idx) => idx % 2 === 0
 
@@ -195,12 +174,21 @@ export function Products(props) {
         globalFilter={state.globalFilter}
       />
       <TableContainer sx={{display: 'flex', flexWrap: 'wrap', width: '100%', maxHeight: 440 }}>
-        <Table {...getTableProps()}>
+        <Table stickyHeader aria-label="sticky table"{...getTableProps()}>
             <TableHead>
             {headerGroups.map((headerGroup) => (
                 <TableRow {...headerGroup.getHeaderGroupProps()}>
+                  <TableCell>
+                  <IconButton
+                    aria-label="expand row"
+                    size="small"
+                    onClick={() => setOpen(!open)}
+                  >
+                    {open ? " ▲" : " ▼"}
+                  </IconButton>
+                </TableCell>
                 {headerGroup.headers.map((column) => (
-                    <TableCell align="center" size="medium" {...column.getHeaderProps(column.getSortByToggleProps())}>
+                    <TableCell align="center" style={{ minWidth: 170 }} {...column.getHeaderProps(column.getSortByToggleProps())}>
                     {column.render("Header")}
                     {column.isSorted ? (column.isSortedDesc ? " ▼" : " ▲") : ""}
                     </TableCell>
@@ -217,8 +205,39 @@ export function Products(props) {
                     {...row.getRowProps()}
                     className={isEven(idx) ? "bg-green-400 bg-opacity-30" : ""}
                 >
+                  <TableCell style={{ paddingBottom: 0, paddingTop: 0 }}>
+                    <Collapse in={open} timeout="auto" unmountOnExit>
+                      <Box sx={{ margin: 1 }}>
+                        <Typography variant="h6" gutterBottom component="div">
+                        Affected Package
+                        </Typography>
+                        <Table size="medium" aria-label="package">
+                        <TableHead>
+                            <TableRow>
+                              <TableCell>Package name</TableCell>
+                              <TableCell>cpe</TableCell>
+                              <TableCell>Fix State</TableCell>
+                              <TableCell>Platform Name</TableCell>
+                            </TableRow>
+                          </TableHead>
+                          <TableBody>
+                          {productsData.package_state.map((cell) => (
+                              <TableRow>
+                                <TableCell component="th" scope="row"  {...cell.getCellProps()}>
+                                  {cell.package_name}
+                                </TableCell>
+                                <TableCell>{cell.cpe}</TableCell>
+                                <TableCell>{cell.fix_state}</TableCell>
+                                <TableCell>{cell.product_name}</TableCell>
+                              </TableRow>
+                            ))}
+                          </TableBody>
+                        </Table>
+                      </Box>
+                    </Collapse>
+                  </TableCell>
                     {row.cells.map((cell, idx) => (
-                    <TableCell align="center" size="medium" {...cell.getCellProps()}>
+                    <TableCell align="center" style={{ minWidth: 170 }} {...cell.getCellProps()}>
                         {cell.render("Cell")}
                     </TableCell>
                     ))}
