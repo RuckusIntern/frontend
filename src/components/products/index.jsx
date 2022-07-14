@@ -1,6 +1,6 @@
 import axios from "axios"
 import React, { Fragment, useEffect, useMemo, useState } from "react"
-import { useGlobalFilter, useSortBy, useTable } from "react-table"
+import { useGlobalFilter, useFilters, useSortBy, useTable } from "react-table"
 import { alpha } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import Table from '@mui/material/Table'
@@ -25,6 +25,7 @@ import { GlobalFilter } from "./globalFilter"
 import Button from '@mui/material/Button'
 import cveData from "./data.json"
 import { TextField } from "@mui/material"
+import { ColumnFilter } from "./columnFilter"
 
 export function Products(props) {
   const [cve, setCve] = useState(cveData)
@@ -92,9 +93,10 @@ export function Products(props) {
                 return {
                   Header: key,
                   accessor: key,
+                  Filter: ColumnFilter,
                   Cell: e =><a href={e.value} target="_blank" rel="noreferrer"> {e.value} </a>
                 }
-              return { Header: key, accessor: key }
+              return { Header: key, accessor: key, Filter: ColumnFilter }
             })
         : [],
     [cve]
@@ -106,6 +108,7 @@ export function Products(props) {
       {
         id: "Comment",
         Header: "Comment",
+        Filter: ColumnFilter,
         Cell: ({ row }) => (
             <TextField fullWidth 
             id="outlined-multiline-static"
@@ -115,7 +118,8 @@ export function Products(props) {
             defaultValue="..."
             size="medium"
             style={{ minWidth: 300 }}
-          />
+          >
+          </TextField>
         ),
       },
     ])
@@ -141,6 +145,7 @@ export function Products(props) {
       columns: productsColumns,
       data: productsData,
     },
+    useFilters,
     useGlobalFilter,
     Comment,
     tableHooks,
@@ -177,10 +182,14 @@ export function Products(props) {
             {headerGroups.map((headerGroup) => (
                 <TableRow {...headerGroup.getHeaderGroupProps()}>
                   <TableCell />
-                {headerGroup.headers.map((column) => (
+                  <TableCell />
+                  {headerGroup.headers.map((column) => (
                     <TableCell align="center" style={{ minWidth: 170 }} {...column.getHeaderProps(column.getSortByToggleProps())}>
                     {column.render("Header")}
-                    {column.isSorted ? (column.isSortedDesc ? " ▼" : " ▲") : ""}
+                    {column.isSorted ? (column.isSortedDesc ? "      ▼" : "      ▲") : "      ≡"}
+                    <br></br>
+                    <br></br>
+                    <div>{column.canFilter ? column.render('Filter') : null}</div>
                     </TableCell>
                 ))}
                 </TableRow>
