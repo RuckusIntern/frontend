@@ -1,5 +1,5 @@
 import axios from "axios"
-import React, { useEffect, useMemo, useState } from "react"
+import React, { Fragment, useEffect, useMemo, useState } from "react"
 import { useGlobalFilter, useSortBy, useTable } from "react-table"
 import { alpha } from '@mui/material/styles'
 import Box from '@mui/material/Box'
@@ -26,10 +26,9 @@ import Button from '@mui/material/Button'
 import cveData from "./data.json"
 import { TextField } from "@mui/material"
 
-
 export function Products(props) {
   const [cve, setCve] = useState(cveData)
-
+  const [cvePackage, setCvePackage] = useState(cveData)
   // const [products, setProducts] = useState([])
   // const fetchProducts = async () => {
   //   const response = await axios
@@ -81,22 +80,21 @@ export function Products(props) {
 //     []
 //   )
 
-  const productsData = useMemo(() => [...cve], [cve]);
-  const [open, setOpen] = React.useState(false);
+  const productsData = useMemo(() => [...cve], [cve])
+  const [open, setOpen] = React.useState(false)
   const productsColumns = useMemo(
     () =>
       cve[0]
         ? Object.keys(cve[0])
             .filter((key) => key !== "errata" && key !== "package_state")
             .map((key) => {
-                // if (key === "image")
-                //     return {
-                //     Header: key,
-                //     accessor: key,
-                //     Cell: ({ value }) => <img src={value} Width = {70} alt = "product pic"/>
-                //     }
-
-              return { Header: key, accessor: key };
+              if (key === "cve_url" || key ==="vulnerabilities_url")
+                return {
+                  Header: key,
+                  accessor: key,
+                  Cell: e =><a href={e.value} target="_blank" rel="noreferrer"> {e.value} </a>
+                }
+              return { Header: key, accessor: key }
             })
         : [],
     [cve]
@@ -175,18 +173,10 @@ export function Products(props) {
       />
       <TableContainer sx={{display: 'flex', flexWrap: 'wrap', width: '100%', maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table"{...getTableProps()}>
-            <TableHead>
+          <TableHead>
             {headerGroups.map((headerGroup) => (
                 <TableRow {...headerGroup.getHeaderGroupProps()}>
-                  <TableCell>
-                  <IconButton
-                    aria-label="expand row"
-                    size="small"
-                    onClick={() => setOpen(!open)}
-                  >
-                    {open ? " ▲" : " ▼"}
-                  </IconButton>
-                </TableCell>
+                  <TableCell />
                 {headerGroup.headers.map((column) => (
                     <TableCell align="center" style={{ minWidth: 170 }} {...column.getHeaderProps(column.getSortByToggleProps())}>
                     {column.render("Header")}
@@ -195,56 +185,60 @@ export function Products(props) {
                 ))}
                 </TableRow>
             ))}
-            </TableHead>
-            <TableBody {...getTableBodyProps()}>
-            {rows.map((row, idx) => {
+          </TableHead>
+          <TableBody {...getTableBodyProps()}>
+            <Fragment>
+              {rows.map((row, idx) => {
                 prepareRow(row);
-
-                return (
-                <TableRow
-                    {...row.getRowProps()}
-                    className={isEven(idx) ? "bg-green-400 bg-opacity-30" : ""}
-                >
-                  <TableCell style={{ paddingBottom: 0, paddingTop: 0 }}>
-                    <Collapse in={open} timeout="auto" unmountOnExit>
-                      <Box sx={{ margin: 1 }}>
-                        <Typography variant="h6" gutterBottom component="div">
-                        Affected Package
-                        </Typography>
-                        <Table size="medium" aria-label="package">
-                        <TableHead>
-                            <TableRow>
-                              <TableCell>Package name</TableCell>
-                              <TableCell>cpe</TableCell>
-                              <TableCell>Fix State</TableCell>
-                              <TableCell>Platform Name</TableCell>
-                            </TableRow>
-                          </TableHead>
-                          <TableBody>
-                          {productsData.package_state.map((cell) => (
+                  return (
+                  <TableRow {...row.getRowProps()} className={isEven(idx) ? "bg-green-400 bg-opacity-30" : ""} sx={{ '& > *': { borderBottom: 'unset' } }}>
+                    <TableCell>
+                      <IconButton
+                        aria-label="expand row"
+                        size="small"
+                        onClick={() => setOpen(!open)}
+                      >
+                        {open ? " ▲" : " ▼"}
+                      </IconButton>
+                    </TableCell>
+                    <TableCell style={{ paddingBottom: 0, paddingTop: 0 }}>
+                      <Collapse in={open} timeout="auto" unmountOnExit>
+                        <Box sx={{ margin: 1 }}>
+                          <Typography variant="h6" gutterBottom component="div">
+                            Affected Package
+                          </Typography>
+                          <Table size="medium" aria-label="package">
+                            <TableHead>
                               <TableRow>
-                                <TableCell component="th" scope="row"  {...cell.getCellProps()}>
-                                  {cell.package_name}
-                                </TableCell>
-                                <TableCell>{cell.cpe}</TableCell>
-                                <TableCell>{cell.fix_state}</TableCell>
-                                <TableCell>{cell.product_name}</TableCell>
+                                <TableCell>Package name</TableCell>
+                                <TableCell>cpe</TableCell>
+                                <TableCell>Fix State</TableCell>
+                                <TableCell>Platform Name</TableCell>
                               </TableRow>
-                            ))}
-                          </TableBody>
-                        </Table>
-                      </Box>
-                    </Collapse>
-                  </TableCell>
+                            </TableHead>
+                            <TableBody>
+                              <TableRow>
+                                <TableCell component="th" scope="row">sample</TableCell>
+                                <TableCell>sample</TableCell>
+                                <TableCell>sample</TableCell>
+                                <TableCell>sample</TableCell>
+                              </TableRow>
+                            </TableBody>
+                          </Table>
+                        </Box>
+                      </Collapse>
+                    </TableCell>
                     {row.cells.map((cell, idx) => (
                     <TableCell align="center" style={{ minWidth: 170 }} {...cell.getCellProps()}>
-                        {cell.render("Cell")}
+                          {cell.render("Cell")}
                     </TableCell>
+                    
                     ))}
-                </TableRow>
-                )
-            })}
-            </TableBody>
+                  </TableRow>
+                  )
+              })}
+            </Fragment>
+          </TableBody>
         </Table>
       </TableContainer>
     </Paper>
