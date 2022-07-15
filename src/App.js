@@ -1,7 +1,8 @@
 import './App.css'
-import { Products } from './components/products'
+import { AffectedPackage } from './components/AffectedPackage'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
+import { PaginationTable } from './components/PaginationTable'
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <Typography variant="h4" component="div" gutterBottom>
       Vulnerability Database
       </Typography>
-      <Products/>
+      <PaginationTable/>
+      {/* <AffectedPackage/> */}
     </Container>
   )
 }
