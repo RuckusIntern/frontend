@@ -26,8 +26,8 @@ export function PaginationTable(props) {
         () =>
         cve[0]
             ? Object.keys(cve[0])
-                .filter((key) => key !== "errata" && key !== "package_state")
-                .map((key) => {
+                .filter((key) => key !== "errata")
+                .map((key) => { 
                     if (key === "cve_url" || key ==="vulnerabilities_url"){
                         return {
                             Header: key,
@@ -37,19 +37,127 @@ export function PaginationTable(props) {
                         }
                     }
                     if (key === "package_state"){
-                        return {
-                            Header: key,
-                            accessor: key,
-                            Filter: ColumnFilter,
-                            Cell: e =><a href={e.value} target="_blank" rel="noreferrer"> {e.value} </a>
+                        return { 
+                            Header: key, 
+                            columns: [
+                                {
+                                    Header: "package_name",
+                                    accessor: "package_state.package_name", 
+                                    Filter: ColumnFilter,
+                                },
+                                {
+                                    Header: "cpe",
+                                    accessor: "package_state.cpe", 
+                                    Filter: ColumnFilter,
+                                },
+                                {
+                                    Header: "fix_state",
+                                    accessor: "package_state.fix_state", 
+                                    Filter: ColumnFilter,
+                                },
+                                {
+                                    Header: "product_name",
+                                    accessor: "package_state.product_name", 
+                                    Filter: ColumnFilter,
+                                },
+                            ],
                         }
                     }
+                    
                     return { Header: key, accessor: key, Filter: ColumnFilter }
                 })
             : [],
         [cve]
     )
-
+    // const productsColumns = useMemo(
+    //     () => [
+    //         {
+    //             Header:"cve_name",
+    //             acessor:"cve_name",
+    //         },
+    //         {
+    //             Header:"cve_url",
+    //             acessor:"cve_url",
+    //             Cell: e =><a href={e.value} target="_blank" rel="noreferrer"> {e.value} </a>
+    //         },
+    //         {
+    //             Header:"cvss_score",
+    //             acessor:"cvss_score",
+    //         },
+    //         {
+    //             Header:"cvss_status",
+    //             acessor:"cvss_status",
+    //         },
+    //         {
+    //             Header: "errate",
+    //             acessor: "errata",
+    //         },
+    //         {
+    //             Header:"package",
+    //             acessor:"package",
+    //         },
+    //         {
+    //             Header:"package_name_big",
+    //             acessor:"package_name_big",
+    //         },
+    //         {
+    //             Header:"package_release",
+    //             acessor:"package_release",
+    //         },
+    //         {
+    //             Header: "package_state", 
+    //             columns: [
+    //                 {
+    //                     Header: "package_name",
+    //                     accessor: "package_state.package_name", 
+    //                     Filter: ColumnFilter,
+    //                 },
+    //                 {
+    //                     Header: "cpe",
+    //                     accessor: "package_state.cpe", 
+    //                     Filter: ColumnFilter,
+    //                 },
+    //                 {
+    //                     Header: "fix_state",
+    //                     accessor: "package_state.fix_state", 
+    //                     Filter: ColumnFilter,
+    //                 },
+    //                 {
+    //                     Header: "product_name",
+    //                     accessor: "package_state.product_name", 
+    //                     Filter: ColumnFilter,
+    //                 },
+    //             ],
+    //         },
+    //         {
+    //             Header:"package_version",
+    //             acessor:"package_version",
+    //         },
+    //         {
+    //             Header:"platform",
+    //             acessor:"platform",
+    //         },
+    //         {
+    //             Header:"release_image_name",
+    //             acessor:"release_image_name",
+    //         },
+    //         {
+    //             Header:"severity",
+    //             acessor:"severity",
+    //         },
+    //         {
+    //             Header:"vulnerabilities_status",
+    //             acessor:"vulnerabilities_status",
+    //         },
+    //         {
+    //             Header:"vulnerabilities_url",
+    //             acessor:"vulnerabilities_url",
+    //             Cell: e =><a href={e.value} target="_blank" rel="noreferrer"> {e.value} </a>
+    //         },
+            
+    //     ],
+    //     [cve]
+    // )
     const Comment = (word) => {
         word.visibleColumns.push((columns) => [
         ...columns,
@@ -162,14 +270,15 @@ export function PaginationTable(props) {
                                         {open ? " ▲" : " ▼"}
                                     </IconButton>
                                 </TableCell>
+                                {[productsData.length - 1].map((data)=>(
                                 <TableCell style={{ paddingBottom: 0, paddingTop: 0 }}>
                                     <Collapse in={open} timeout="auto" unmountOnExit>
                                         <Box sx={{ margin: 1 }}>
                                             <Typography variant="h6" gutterBottom component="div">
                                                 Affected Package
                                             </Typography>
-                                            {productsData.map((data)=>(
-                                            <Table size="medium" aria-label="package">
+                                            
+                                            <Table size="medium" aria-label="package"> 
                                                 <TableHead>
                                                     <TableRow>
                                                         <TableCell>Package name</TableCell>
@@ -179,24 +288,21 @@ export function PaginationTable(props) {
                                                     </TableRow>
                                                 </TableHead>
                                                 <TableBody>
-                                                    {data.package_state.map((d)=>(
                                                     <TableRow>
-                                                        <TableCell component="th" scope="row">{d.package_name}</TableCell>
-                                                        <TableCell>{d.cpe}</TableCell>
-                                                        <TableCell>{d.fix_state}</TableCell>
-                                                        <TableCell>{d.product_name}</TableCell>
+                                                        <TableCell component="th" scope="row">{data.package_name}</TableCell>
+                                                        <TableCell>{data.cpe}</TableCell>
+                                                        <TableCell>{data.fix_state}</TableCell>
+                                                        <TableCell>{data.product_name}</TableCell>
                                                     </TableRow>
-                                                    ))}
                                                 </TableBody>
-
                                             </Table>
-                                            ))}
                                         </Box>
                                     </Collapse>
                                 </TableCell >
+                                ))}
                                 {row.cells.map((cell, idx) => (
                                 <TableCell align="center" style={{ minWidth: 170, Height: 10 }} {...cell.getCellProps()}>
-                                    {cell.render("Cell")}
+                                    {cell.render("Cell")}                               
                                 </TableCell>
                                 ))}
                             </TableRow>

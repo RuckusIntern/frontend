@@ -12,8 +12,8 @@ function App() {
       <Typography variant="h4" component="div" gutterBottom>
       Vulnerability Database
       </Typography>
-      <PaginationTable/>
-      {/* <AffectedPackage/> */}
+      {/* <PaginationTable/> */}
+      <AffectedPackage/>
     </Container>
   )
 }
