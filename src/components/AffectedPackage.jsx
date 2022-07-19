@@ -13,16 +13,12 @@ import TablePagination from '@mui/material/TablePagination';
 import { TextField } from "@mui/material"
 import Paper from '@mui/material/Paper'
 import IconButton from '@mui/material/IconButton'
-import cveData from "./data.json"
 
-export function AffectedPackage({props}) {
+export default function AffectedPackage({data}) {  
   
-  const [cves, setCve] = useState(cveData)
-  const [value, setValue] = useState("")
-  const [open, setOpen] = React.useState(false)
-  const [page, setPage] = React.useState(0)
-  const [rowsPerPage, setRowsPerPage] = React.useState(10)
-  const [searchColumns, setSearchColumns] = useState([])
+  const [open, setOpen] = useState(false)
+  const [page, setPage] = useState(0)
+  const [rowsPerPage, setRowsPerPage] = useState(10)
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -33,71 +29,47 @@ export function AffectedPackage({props}) {
     setPage(0);
   };
 
-  function search(rows) {
-    return rows.filter((row) => 
-      searchColumns.some(
-        (column) => 
-          row[column].toString().toLowerCase.indexOf(value.toLocaleLowerCase()) > -1
-      ) 
-    )
-  }
-
-  const columns = cves[0] && Object.keys(cves[0])
-  
-
   return (
     <Paper sx={{display: 'flex', flexWrap: 'wrap', width: '95%', maxHeight: '30%' }}>
-      <div>
-        <input type="text" value={value} onChange={(e) => {setValue(e.target.value)}}/>
-        {columns &&
-          columns.map((column) => (
-            <label>
-              <input 
-                type="checkbox" 
-                checked={searchColumns.includes(column)}
-                onChange={(e) => {
-                  const checked = searchColumns.includes(column)
-                  setSearchColumns(prev => 
-                    checked
-                      ? prev.filter(sc => sc !== column)
-                      : [...prev, column]
-                  )
-                }}
-              />
-              {column}
-            </label>
-            ))}
-      </div>
       <TableContainer compinent={Paper} sx={{display: 'flex', flexWrap: 'wrap', width: '100%', maxHeight: 500}}>
-      
         <Table stickyHeader aria-label="sticky table" sx = {{ maxHeight: 20 }}>
           <TableHead>
             <TableRow >
-              <TableCell align="center" style={{ minWidth: 170 }}>Package State
-              </TableCell>
+              <TableCell align="center" style={{ minWidth: 120 }}>Package State</TableCell>
+              <TableCell align="center" style={{ minWidth: 60 }}>Errata</TableCell>
               <TableCell align="center" style={{ minWidth: 170 }}>CVE Name</TableCell>
               <TableCell align="center" style={{ minWidth: 250 }}>CVE URL</TableCell>
-              <TableCell align="center" style={{ minWidth: 170 }}>CVSS Score</TableCell>
-              <TableCell align="center" style={{ minWidth: 170 }}>CVSS State</TableCell>
+              <TableCell align="center" style={{ minWidth: 100 }}>CVSS Score</TableCell>
+              <TableCell align="center" style={{ minWidth: 100 }}>CVSS State</TableCell>
               <TableCell align="center" style={{ minWidth: 170 }}>Package</TableCell>
-              <TableCell align="center" style={{ minWidth: 170 }}>Package Name</TableCell>
+              <TableCell align="center" style={{ minWidth: 150 }}>Package Name Big</TableCell>
               <TableCell align="center" style={{ minWidth: 170 }}>Package Release</TableCell>
               <TableCell align="center" style={{ minWidth: 170 }}>Package Version</TableCell>
               <TableCell align="center" style={{ minWidth: 170 }}>Platform</TableCell>
+              <TableCell align="center" style={{ minWidth: 170 }}>Realse Image Name</TableCell>
               <TableCell align="center" style={{ minWidth: 170 }}>Severity</TableCell>
               <TableCell align="center" style={{ minWidth: 170 }}>Vulnerabilities Staus</TableCell>
               <TableCell align="center" style={{ minWidth: 170 }}>Vulnerabilities URL</TableCell>
               <TableCell align="center" style={{ minWidth: 100 }}>Comment</TableCell>
-              <TableCell/>
+              <TableCell align="center" style={{ minWidth: 100 }}/>
             </TableRow>
           </TableHead>
           <TableBody>
-          {cves
+          {data
           .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
           .map((cve) => (
             <Fragment>
               <TableRow sx={{ '& > *': { borderBottom: 'solid' } }}>
-                <TableCell>
+                <TableCell align="center">
+                  <IconButton
+                  aria-label="expand row"
+                  size="small"
+                  onClick={() => setOpen(!open)}
+                  >
+                  {open ? " ▲" : " ▼"}
+                  </IconButton>
+                </TableCell>
+                <TableCell align="center">
                   <IconButton
                   aria-label="expand row"
                   size="small"
@@ -107,17 +79,18 @@ export function AffectedPackage({props}) {
                   </IconButton>
                 </TableCell>
                 <TableCell align="center">{cve.cve_name}</TableCell>
-                <TableCell align="center" style={{ minWidth: 500 }}><a href={cve.cve_url} target="_blank" rel="noreferrer"> {cve.cve_url} </a></TableCell>
+                <TableCell align="center" style={{ minWidth: 450 }}><a href={cve.cve_url} target="_blank" rel="noreferrer"> {cve.cve_url} </a></TableCell>
                 <TableCell align="center">{cve.cvss_score}</TableCell>
                 <TableCell align="center">{cve.cvss_status}</TableCell>
-                <TableCell align="center" style={{ minWidth: 500 }}>{cve.package}</TableCell>
-                <TableCell align="center">{cve.package_name}</TableCell>
+                <TableCell align="center" style={{ minWidth: 400 }}>{cve.package}</TableCell>
+                <TableCell align="center">{cve.package_name_big}</TableCell>
                 <TableCell align="center">{cve.package_release}</TableCell>
                 <TableCell align="center">{cve.package_version}</TableCell>
                 <TableCell align="center">{cve.platform}</TableCell>
+                <TableCell align="center">{cve.release_image_name}</TableCell>
                 <TableCell align="center">{cve.severity}</TableCell>
                 <TableCell align="center">{cve.vulnerabilities_status}</TableCell>
-                <TableCell align="center">{cve.vulnerabilities_url}</TableCell>
+                <TableCell align="center" style={{ minWidth: 450 }}><a href={cve.vulnerabilities_url} target="_blank" rel="noreferrer"> {cve.vulnerabilities_url} </a></TableCell>
                 <TableCell>
                   <TextField fullWidth 
                   id="outlined-multiline-static"
@@ -145,19 +118,56 @@ export function AffectedPackage({props}) {
                       <Table size="small" aria-label="package">
                         <TableHead>
                           <TableRow>
-                            <TableCell>Package Name</TableCell>
-                            <TableCell>CPE</TableCell>
-                            <TableCell>Fix State</TableCell>
-                            <TableCell>Platform Name</TableCell>
+                            <TableCell align="center" style={{ minWidth: 140 }}>Package Name</TableCell>
+                            <TableCell align="center" style={{ minWidth: 170 }}>CPE</TableCell>
+                            <TableCell align="center" style={{ minWidth: 80 }}>Fix State</TableCell>
+                            <TableCell align="center" style={{ minWidth: 80 }}>Impact</TableCell>
+                            <TableCell align="center" style={{ minWidth: 170 }}>Platform Name</TableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
                         {cve.package_state.map((c) => (
                           <TableRow>
-                            <TableCell component="th" scope="row">{c.package_name}</TableCell>
-                            <TableCell component="th" scope="row">{c.cpe}</TableCell>
-                            <TableCell component="th" scope="row">{c.fix_state}</TableCell>
-                            <TableCell component="th" scope="row">{c.product_name}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{c.package_name}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{c.cpe}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{c.fix_state}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{c.impact}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{c.product_name}</TableCell>
+                          </TableRow>
+                        ))}
+                        </TableBody>
+                      </Table>
+                    </Box>
+                  </Collapse>
+                </TableCell >
+              </TableRow>
+              <TableRow>
+                <TableCell style={{ paddingBottom: 0, paddingTop: 0 }}>
+                  <Collapse in={open} timeout="auto" unmountOnExit>
+                    <Box sx={{ margin: 1 }}>
+                      <Typography variant="h6" gutterBottom component="div">
+                      Cheack Errata Table
+                      </Typography>
+                      <Table size="small" aria-label="package">
+                        <TableHead>
+                          <TableRow>
+                            <TableCell align="center" style={{ minWidth: 170 }}>Advisory</TableCell>
+                            <TableCell align="center" style={{ minWidth: 170 }}>CPE</TableCell>
+                            <TableCell align="center" style={{ minWidth: 170 }}>Package</TableCell>
+                            <TableCell align="center" style={{ minWidth: 180 }}>Product Name</TableCell>
+                            <TableCell align="center" style={{ minWidth: 170 }}>Release Date</TableCell>
+                            <TableCell align="center" style={{ minWidth: 170 }}>URL</TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                        {cve.errata.map((v) => (
+                          <TableRow>
+                            <TableCell align="center" component="th" scope="row">{v.advisory}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{v.cpe}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{v.package}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{v.product_name}</TableCell>
+                            <TableCell align="center" component="th" scope="row">{v.release_date}</TableCell>
+                            <TableCell align="center" component="th" scope="row"style={{ minWidth: 500 }}><a href={'https://access.redhat.com/errata/' + v.advisory} target="_blank" rel="noreferrer"> {'https://access.redhat.com/errata/' + v.advisory} </a></TableCell>
                           </TableRow>
                         ))}
                         </TableBody>
@@ -174,7 +184,7 @@ export function AffectedPackage({props}) {
       <TablePagination
         rowsPerPageOptions={[5, 10, 25, 100]}
         component="div"
-        count={cves.length}
+        count={data.length}
         rowsPerPage={rowsPerPage}
         page={page}
         onPageChange={handleChangePage}

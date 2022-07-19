@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useAsyncDebounce } from "react-table";
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 export function GlobalFilter({
