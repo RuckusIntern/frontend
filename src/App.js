@@ -1,10 +1,11 @@
 import './App.css'
-import React, { useState } from "react"
-import AdminPage from './components/AdminPage.jsx'
+import api from './components/posts'
+import React, { useState, useEffect } from "react"
+// import AdminPage from './components/AdminPage'
 import AffectedPackage from './components/AffectedPackage'
+// import CVEPage from './components/CVEPage'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
-import cveData from "./components/data.json"
 import Box from '@mui/material/Box'
 import Collapse from '@mui/material/Collapse';
 import Table from '@mui/material/Table'
@@ -12,11 +13,35 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import IconButton from '@mui/material/IconButton'
 
+
 export default function App() {
-  const [cves, setCve] = useState(cveData)
+  const [cves, setCve] = useState([])
   const [value, setValue] = useState("")
   const [searchColumns, setSearchColumns] = useState(["cve_name"])
   const [open, setOpen] = useState(false)
+  const [editComment, setEditComment] = useState('')
+  const [editSolution, setEditSolution] = useState('')
+
+  useEffect(() => {
+    const fetchCve = async () =>{
+      try{
+        const response = await api.get('/jsonarray')
+        setCve(response.data)
+      } catch (err) {
+        if(err.response){
+        // Not in the 200 response range
+          console.log(err.response.data)
+          console.log(err.response.status)
+          console.log(err.response.headers)
+        } else {
+          console.log(`Error: ${err.message}`)
+        }
+      }
+    }
+    fetchCve()
+  }, [])
+
+
   function search(rows) {
     //return rows.filter((row) => row.cve_name.toLowerCase().indexOf(value) > -1)
     return rows.filter((row) => 
@@ -74,8 +99,9 @@ export default function App() {
             </label>
         ))}
       </div>
-      <AdminPage data = {search(cves)}/>
-      {/* <AffectedPackage data = {search(cves)}/> */}
+      {/* <AdminPage data = {search(cves)}/> */}
+      <AffectedPackage data = {search(cves)}/>
+      {/* <CVEPage data = {search(cves)}/> */}
     </Container>
   )
 }

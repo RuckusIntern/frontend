@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react"
+import React, { Fragment, useState, useEffect } from "react"
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Collapse from '@mui/material/Collapse';
@@ -13,12 +13,31 @@ import TablePagination from '@mui/material/TablePagination';
 import { TextField } from "@mui/material"
 import Paper from '@mui/material/Paper'
 import IconButton from '@mui/material/IconButton'
+import { useNavigate } from "react-router-dom";
+import { formatDateFull } from "./utils";
+import axios from 'axios'
 
-export default function AffectedPackage({data}) {  
+export default function CVEPage({data}) {  
   
   const [open, setOpen] = useState(false)
   const [page, setPage] = useState(0)
   const [rowsPerPage, setRowsPerPage] = useState(10)
+  const [cvePackage, setCvePackage] = useState({})
+  const [cve_name, set_cve_name] = useState('')
+  const [cvss_score, set_cvss_score] = useState('')
+  const [cvss_status, set_cvss_status] = useState('')
+  const [cve_url, set_cve_url] = useState('')
+  const [severity, set_severity] = useState('')
+  const [vulnerabilities_status, set_vulnerabilities_status] = useState('')
+  const [vulnerabilities_url, set_vulnerabilities_url] = useState('')
+  const [platform, set_platform] = useState('')
+  const [release_image_name, set_release_image_name] = useState('')
+  const [package_name, set_package_name] = useState('')
+  const [package_version, set_package_version] = useState('')
+  const [package_release, set_package_release] = useState('')
+  const [comment, set_comment] = useState('')
+  const [solution, set_solution] = useState('')
+  const [commentator, set_commentator] = useState('')
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);

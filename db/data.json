@@ -1,0 +1,3684 @@
+{
+  "jsonarray":[
+  {
+    "cve_name": "CVE-2016-6349",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-6349",
+    "cvss_score": "1.9",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "oci-register-machine-1:0-6.git2b44233.el7",
+    "package_name_big": "oci-register-machine",
+    "package_release": "6.git2b44233.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "oci-register-machine",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "systemd",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1:0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2021-36087",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2021-36087",
+    "cvss_score": "3.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libsepol-2.5-10.el7",
+    "package_name_big": "libsepol",
+    "package_release": "10.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Fix deferred",
+        "package_name": "libsepol",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3215",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3215",
+    "cvss_score": "6.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "policycoreutils-2.5-29.el7_6.1",
+    "package_name_big": "policycoreutils",
+    "package_release": "29.el7_6.1",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "policycoreutils",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "selinux-policy",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3215",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3215",
+    "cvss_score": "6.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "selinux-polic-3.13.1-229.el7_6.12",
+    "package_name_big": "selinux-polic",
+    "package_release": "229.el7_6.12",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "policycoreutils",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "selinux-policy",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.13.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2021-43618",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2021-43618",
+    "cvss_score": "6.2",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "gmp-1:6.0.0-15.el7",
+    "package_name_big": "gmp",
+    "package_release": "15.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Out of support scope",
+        "package_name": "gmp",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1:6.0.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "python-bot-2.25.0-2.el7.centos",
+    "package_name_big": "python-bot",
+    "package_release": "2.el7.centos",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.25.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-11627",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-11627",
+    "cvss_score": "6.1",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "google-compute-engin-2.8.12-1.el7",
+    "package_name_big": "google-compute-engin",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "pcs",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.8.12",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2020-29361",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2020-29361",
+    "cvss_score": "7.5",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "p11-kit-0.23.5-3.el7",
+    "package_name_big": "p11-kit",
+    "package_release": "3.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "p11-kit",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.23.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3215",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3215",
+    "cvss_score": "6.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libcap-2.22-9.el7",
+    "package_name_big": "libcap",
+    "package_release": "9.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "policycoreutils",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "selinux-policy",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.22",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-6393",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-6393",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libyaml-0.1.4-11.el7_0",
+    "package_name_big": "libyaml",
+    "package_release": "11.el7_0",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libyaml",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.1.4",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2022-28327",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2022-28327",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "collectd-5.8.1-1.el7",
+    "package_name_big": "collectd",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Out of support scope",
+        "package_name": "golang",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "5.8.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-7169",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-7169",
+    "cvss_score": "5.1",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "bash-4.2.46-30.el7",
+    "package_name_big": "bash",
+    "package_release": "30.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "rhel-guest-image",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "4.2.46",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-16168",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-16168",
+    "cvss_score": "6.5",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "filesystem-3.2-25.el7",
+    "package_name_big": "filesystem",
+    "package_release": "25.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "sqlite",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-4200",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-4200",
+    "cvss_score": "1.9",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "open-vm-tools-11.0.5-3.el7",
+    "package_name_big": "open-vm-tools",
+    "package_release": "3.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "open-vm-tools",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "11.0.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-4288",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-4288",
+    "cvss_score": "6.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "polkit-0.112-26.el7",
+    "package_name_big": "polkit",
+    "package_release": "26.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "polkit",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.112",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2021-36203",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2021-36203",
+    "cvss_score": "5.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "lksctp-tools-1.0.17-2.el7",
+    "package_name_big": "lksctp-tools",
+    "package_release": "2.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "buildah",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "containernetworking-plugins",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "lksctp-tools",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "podman",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.0.17",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2017-10685",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2017-10685",
+    "cvss_score": "-1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "ncurses-5.9-14.20130511.el7_4",
+    "package_name_big": "ncurses",
+    "package_release": "14.20130511.el7_4",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "ncurses",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "5.9",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7440",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7440",
+    "cvss_score": "4.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libselinux-2.5-14.1.el7",
+    "package_name_big": "libselinux",
+    "package_release": "14.1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-backports-ssl_match_hostname",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-setuptools",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-virtualenv",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3215",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3215",
+    "cvss_score": "6.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "coreutils-8.22-21.el7",
+    "package_name_big": "coreutils",
+    "package_release": "21.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "policycoreutils",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "selinux-policy",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "8.22",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2012-1569",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2012-1569",
+    "cvss_score": "5.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libtasn1-4.10-1.el7",
+    "package_name_big": "libtasn1",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libtasn1",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "4.10",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-6318",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-6318",
+    "cvss_score": "1.9",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "cracklib-2.9.0-11.el7",
+    "package_name_big": "cracklib",
+    "package_release": "11.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "cracklib",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.9.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-2524",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-2524",
+    "cvss_score": "2.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "readline-6.2-10.el7",
+    "package_name_big": "readline",
+    "package_release": "10.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "readline",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "6.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3215",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3215",
+    "cvss_score": "6.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libcap-ng-0.7.5-4.el7",
+    "package_name_big": "libcap-ng",
+    "package_release": "4.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "policycoreutils",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "selinux-policy",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.7.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-2327",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-2327",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "pcre-8.32-17.el7",
+    "package_name_big": "pcre",
+    "package_release": "17.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "glib2",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "virtuoso-opensource",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "8.32",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-5461",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-5461",
+    "cvss_score": "4.4",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "lua-5.1.4-15.el7",
+    "package_name_big": "lua",
+    "package_release": "15.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "lua",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "5.1.4",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-4242",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-4242",
+    "cvss_score": "1.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libgcrypt-1.5.3-14.el7",
+    "package_name_big": "libgcrypt",
+    "package_release": "14.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libgcrypt",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.5.3",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-5407",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-5407",
+    "cvss_score": "4.8",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "javapackages-tool-3.4.1-11.el7",
+    "package_name_big": "javapackages-tool",
+    "package_release": "11.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "openssl098e",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.4.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "Resolved",
+    "vulnerabilities_url": "https://access.redhat.com/security/vulnerabilities/L1TF"
+  },
+  {
+    "cve_name": "CVE-2013-7440",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7440",
+    "cvss_score": "4.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "zlib-1.2.7-17.el7",
+    "package_name_big": "zlib",
+    "package_release": "17.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-backports-ssl_match_hostname",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-setuptools",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-virtualenv",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.2.7",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3146",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3146",
+    "cvss_score": "2.6",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "python-lxml-3.2.1-4.el7",
+    "package_name_big": "python-lxml",
+    "package_release": "4.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-lxml",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.2.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-6252",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-6252",
+    "cvss_score": "4.4",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "shadow-utils-2:4.1.5.1-24.el7",
+    "package_name_big": "shadow-utils",
+    "package_release": "24.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "shadow-utils",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2:4.1.5.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-0341",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-0341",
+    "cvss_score": "4.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "expat-2.1.0-10.el7_3",
+    "package_name_big": "expat",
+    "package_release": "10.el7_3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "expat",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.1.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-17543",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-17543",
+    "cvss_score": "8.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "lz4-1.7.5-2.el7",
+    "package_name_big": "lz4",
+    "package_release": "2.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "lz4",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.7.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-7995",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-7995",
+    "cvss_score": "5.0",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libxslt-1.1.28-5.el7",
+    "package_name_big": "libxslt",
+    "package_release": "5.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "libxslt",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.1.28",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-4035",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-4035",
+    "cvss_score": "4.4",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "xz-5.2.2-1.el7",
+    "package_name_big": "xz",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "xz",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "5.2.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-2059",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-2059",
+    "cvss_score": "2.6",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libidn-1.28-4.el7",
+    "package_name_big": "libidn",
+    "package_release": "4.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "libidn",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.28",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-1197",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-1197",
+    "cvss_score": "2.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "cpio-2.11-27.el7",
+    "package_name_big": "cpio",
+    "package_release": "27.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "cpio",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.11",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-20795",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-20795",
+    "cvss_score": "4.4",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "iproute-4.11.0-14.el7",
+    "package_name_big": "iproute",
+    "package_release": "14.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "iproute",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "4.11.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-6630",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-6630",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libjpeg-turbo-1.2.90-5.el7",
+    "package_name_big": "libjpeg-turbo",
+    "package_release": "5.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libjpeg-turbo",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.2.90",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libdb-5.3.21-24.el7",
+    "package_name_big": "libdb",
+    "package_release": "24.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "5.3.21",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-0017",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-0017",
+    "cvss_score": "4.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libssh2-1.4.3-10.el7_2.1",
+    "package_name_big": "libssh2",
+    "package_release": "10.el7_2.1",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libssh2",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.4.3",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-18898",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-18898",
+    "cvss_score": "3.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "trousers-0.3.14-2.el7",
+    "package_name_big": "trousers",
+    "package_release": "2.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "trousers",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.3.14",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "hostname-3.13-3.el7",
+    "package_name_big": "hostname",
+    "package_release": "3.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.13",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "python-backports-ssl_match_hostnam-3.5.0.1-1.el7",
+    "package_name_big": "python-backports-ssl_match_hostnam",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.5.0.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2020-14422",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2020-14422",
+    "cvss_score": "5.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "python-ipaddres-1.0.16-2.el7",
+    "package_name_big": "python-ipaddres",
+    "package_release": "2.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-ipaddress",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-pip",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.0.16",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "python-backports-1.0-8.el7",
+    "package_name_big": "python-backports",
+    "package_release": "8.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2017-0386",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2017-0386",
+    "cvss_score": "7.8",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libnl-1.1.4-3.el7",
+    "package_name_big": "libnl",
+    "package_release": "3.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libnl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libnl3",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.1.4",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2017-0386",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2017-0386",
+    "cvss_score": "7.8",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libnl3-3.2.28-4.el7",
+    "package_name_big": "libnl3",
+    "package_release": "4.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libnl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libnl3",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.2.28",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-6272",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-6272",
+    "cvss_score": "5.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libevent-2.0.21-4.el7",
+    "package_name_big": "libevent",
+    "package_release": "4.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "firefox",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "libevent",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "openmpi",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "thunderbird",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.0.21",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-1752",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-1752",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "python-setuptool-0.9.8-7.el7",
+    "package_name_big": "python-setuptool",
+    "package_release": "7.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "redhat-support-lib-python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.9.8",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2020-14344",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2020-14344",
+    "cvss_score": "6.7",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libdrm-2.4.83-2.el7",
+    "package_name_big": "libdrm",
+    "package_release": "2.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "libX11",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.4.83",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-4327",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-4327",
+    "cvss_score": "6.9",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "systemd-219-78.el7_9.5",
+    "package_name_big": "systemd",
+    "package_release": "78.el7_9.5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "systemd",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "219",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-1906",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-1906",
+    "cvss_score": "4.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "json-c-0.11-4.el7_0",
+    "package_name_big": "json-c",
+    "package_release": "4.el7_0",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "kubernetes",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.11",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2017-6419",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2017-6419",
+    "cvss_score": "6.5",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libmspack-0.5-0.5.alpha.el7",
+    "package_name_big": "libmspack",
+    "package_release": "0.5.alpha.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "libmspack",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-17942",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-17942",
+    "cvss_score": "3.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "parted-3.1-29.el7",
+    "package_name_big": "parted",
+    "package_release": "29.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "coreutils",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libvirt",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3554",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3554",
+    "cvss_score": "5.8",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libndp-1.2-7.el7",
+    "package_name_big": "libndp",
+    "package_release": "7.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "libndp",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3477",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3477",
+    "cvss_score": "3.6",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "dbus-1:1.10.24-7.el7",
+    "package_name_big": "dbus",
+    "package_release": "7.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "dbus",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1:1.10.24",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2020-14040",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2020-14040",
+    "cvss_score": "7.5",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "make-1:3.82-23.el7",
+    "package_name_big": "make",
+    "package_release": "23.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Out of support scope",
+        "package_name": "golang",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1:3.82",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2022-1348",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2022-1348",
+    "cvss_score": "6.2",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "logrotate-3.8.6-15.el7",
+    "package_name_big": "logrotate",
+    "package_release": "15.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "logrotate",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.8.6",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-2327",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-2327",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "glib2-2.54.2-2.el7",
+    "package_name_big": "glib2",
+    "package_release": "2.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "glib2",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "virtuoso-opensource",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.54.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-8607",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-8607",
+    "cvss_score": "4.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "perl-PathTools-3.40-5.el7",
+    "package_name_big": "perl-PathTools",
+    "package_release": "5.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "perl-PathTools",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.40",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2021-36770",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2021-36770",
+    "cvss_score": "7.8",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "perl-Encode-2.51-7.el7",
+    "package_name_big": "perl-Encode",
+    "package_release": "7.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "perl-Encode",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.51",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2012-5667",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2012-5667",
+    "cvss_score": "4.4",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "grep-2.20-3.el7",
+    "package_name_big": "grep",
+    "package_release": "3.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "grep",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.20",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2017-6512",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2017-6512",
+    "cvss_score": "4.7",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "perl-File-Pat-2.09-2.el7",
+    "package_name_big": "perl-File-Pat",
+    "package_release": "2.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "perl-File-Path",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.09",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2011-5320",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2011-5320",
+    "cvss_score": "1.9",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "glibc-2.17-222.el7",
+    "package_name_big": "glibc",
+    "package_release": "222.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "glibc",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.17",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-9893",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-9893",
+    "cvss_score": "7.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libseccomp-2.3.1-3.el7",
+    "package_name_big": "libseccomp",
+    "package_release": "3.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "libseccomp",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.3.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3564",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3564",
+    "cvss_score": "5.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "gpgme-1.3.2-5.el7",
+    "package_name_big": "gpgme",
+    "package_release": "5.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "gpgme",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.3.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-9747",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-9747",
+    "cvss_score": "2.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "freetype-2.4.11-15.el7",
+    "package_name_big": "freetype",
+    "package_release": "15.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "freetype",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.4.11",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2020-8991",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2020-8991",
+    "cvss_score": "2.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "lvm2-7:2.02.177-4.el7",
+    "package_name_big": "lvm2",
+    "package_release": "4.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "lvm2",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "7:2.02.177",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2020-14422",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2020-14422",
+    "cvss_score": "5.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "python-IP-0.75-6.el7",
+    "package_name_big": "python-IP",
+    "package_release": "6.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-ipaddress",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-pip",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.75",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2022-24795",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2022-24795",
+    "cvss_score": "5.9",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "yajl-2.0.4-4.el7",
+    "package_name_big": "yajl",
+    "package_release": "4.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Out of support scope",
+        "package_name": "yajl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.0.4",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2020-10188",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2020-10188",
+    "cvss_score": "9.8",
+    "cvss_status": "verified",
+    "errata": [
+      {
+        "advisory": "RHSA-2020:1334",
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "package": "telnet-1:0.17-65.el7_8",
+        "product_name": "Red Hat Enterprise Linux 7",
+        "release_date": "2020-04-06T00:00:00Z"
+      }
+    ],
+    "package": "telnet-1:0.17-64.el7",
+    "package_name_big": "telnet",
+    "package_release": "64.el7",
+    "package_state": [],
+    "package_version": "1:0.17",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-6251",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-6251",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "plymouth-0.8.9-0.31.20140113.el7.centos",
+    "package_name_big": "plymouth",
+    "package_release": "0.31.20140113.el7.centos",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "webkitgtk3",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.8.9",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-9706",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-9706",
+    "cvss_score": "7.0",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "cronie-1.4.11-19.el7",
+    "package_name_big": "cronie",
+    "package_release": "19.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "cronie",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.4.11",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-1752",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-1752",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "setu-2.8.71-9.el7",
+    "package_name_big": "setu",
+    "package_release": "9.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "redhat-support-lib-python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.8.71",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-4121",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-4121",
+    "cvss_score": "5.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "gobject-introspection-1.50.0-1.el7",
+    "package_name_big": "gobject-introspection",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "webkitgtk3",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.50.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-7999",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-7999",
+    "cvss_score": "8.8",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "graphite2-1.3.10-1.el7_3",
+    "package_name_big": "graphite2",
+    "package_release": "1.el7_3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "firefox",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "graphite2",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "thunderbird",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.3.10",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "PyYAML-3.10-11.el7",
+    "package_name_big": "PyYAML",
+    "package_release": "11.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.10",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-0210",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-0210",
+    "cvss_score": "5.4",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "wpa_supplicant-1:2.6-9.el7",
+    "package_name_big": "wpa_supplicant",
+    "package_release": "9.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "wpa_supplicant",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1:2.6",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": null,
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-6425",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-6425",
+    "cvss_score": "6.8",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "pixman-0.34.0-1.el7",
+    "package_name_big": "pixman",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "pixman",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.34.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-4121",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-4121",
+    "cvss_score": "5.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "fontconfig-2.10.95-11.el7",
+    "package_name_big": "fontconfig",
+    "package_release": "11.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "webkitgtk3",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.10.95",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-9274",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-9274",
+    "cvss_score": "5.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "harfbuzz-1.3.2-1.el7",
+    "package_name_big": "harfbuzz",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "harfbuzz",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.3.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-6346",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-6346",
+    "cvss_score": "5.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "info-5.1-5.el7",
+    "package_name_big": "info",
+    "package_release": "5.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "resteasy-base",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "5.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-6954",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-6954",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libpng-2:1.5.13-7.el7_2",
+    "package_name_big": "libpng",
+    "package_release": "7.el7_2",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libpng",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libpng12",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2:1.5.13",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-4330",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-4330",
+    "cvss_score": "2.6",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "perl-Data-Dumper-2.145-3.el7",
+    "package_name_big": "perl-Data-Dumper",
+    "package_release": "3.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "perl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "perl-Data-Dumper",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.145",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7439",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7439",
+    "cvss_score": "2.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libxcb-1.12-1.el7",
+    "package_name_big": "libxcb",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libX11",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.12",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7439",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7439",
+    "cvss_score": "2.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libXext-1.3.3-3.el7",
+    "package_name_big": "libXext",
+    "package_release": "3.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libX11",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.3.3",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7439",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7439",
+    "cvss_score": "2.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libXrender-0.9.10-1.el7",
+    "package_name_big": "libXrender",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libX11",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.9.10",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7439",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7439",
+    "cvss_score": "2.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libXxf86vm-1.1.4-1.el7",
+    "package_name_big": "libXxf86vm",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libX11",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.1.4",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-3189",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-3189",
+    "cvss_score": "4.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "bzip2-1.0.6-13.el7",
+    "package_name_big": "bzip2",
+    "package_release": "13.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzip2",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.0.6",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7439",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7439",
+    "cvss_score": "2.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libXfixes-5.0.3-1.el7",
+    "package_name_big": "libXfixes",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libX11",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "5.0.3",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-1125",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-1125",
+    "cvss_score": "4.4",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "procps-ng-3.3.10-17.el7_5.2",
+    "package_name_big": "procps-ng",
+    "package_release": "17.el7_5.2",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "procps-ng",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.3.10",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7443",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7443",
+    "cvss_score": "1.9",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "sqlite-3.7.17-8.el7",
+    "package_name_big": "sqlite",
+    "package_release": "8.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "sqlite",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.7.17",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7439",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7439",
+    "cvss_score": "2.9",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "libX11-1.6.5-1.el7",
+    "package_name_big": "libX11",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libX11",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.6.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-10735",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-10735",
+    "cvss_score": "6.1",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "pexpec-2.3-11.el7",
+    "package_name_big": "pexpec",
+    "package_release": "11.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "pki-core",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.3",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-11360",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-11360",
+    "cvss_score": "4.2",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "iptables-1.4.21-24.1.el7_5",
+    "package_name_big": "iptables",
+    "package_release": "24.1.el7_5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Out of support scope",
+        "package_name": "iptables",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.4.21",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-2613",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-2613",
+    "cvss_score": "5.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "nss-softokn-3.36.0-5.el7_5",
+    "package_name_big": "nss-softokn",
+    "package_release": "5.el7_5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "java-1.6.0-openjdk",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "java-1.7.0-openjdk",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "java-1.8.0-openjdk",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "nss-softokn",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.36.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-9114",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-9114",
+    "cvss_score": "6.2",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "util-linux-2.23.2-52.el7_5.1",
+    "package_name_big": "util-linux",
+    "package_release": "52.el7_5.1",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "util-linux",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.23.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-4121",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-4121",
+    "cvss_score": "5.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "pango-1.40.4-1.el7",
+    "package_name_big": "pango",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "webkitgtk3",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.40.4",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2020-14040",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2020-14040",
+    "cvss_score": "7.5",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "tune-2.9.0-1.el7_5.2",
+    "package_name_big": "tune",
+    "package_release": "1.el7_5.2",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Out of support scope",
+        "package_name": "golang",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.9.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-11627",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-11627",
+    "cvss_score": "6.1",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "erlang-21.3.8.2-1.el7",
+    "package_name_big": "erlang",
+    "package_release": "1.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "pcs",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "21.3.8.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2017-0553",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2017-0553",
+    "cvss_score": "7.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "NetworkManager-1:1.10.2-16.el7_5",
+    "package_name_big": "NetworkManager",
+    "package_release": "16.el7_5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "libnl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1:1.10.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-1739",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-1739",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "nss-util-3.36.0-1.el7_5",
+    "package_name_big": "nss-util",
+    "package_release": "1.el7_5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "nss",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.36.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2015-0250",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2015-0250",
+    "cvss_score": "5.8",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "fuse-2.9.2-10.el7",
+    "package_name_big": "fuse",
+    "package_release": "10.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "batik",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.9.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-4351",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-4351",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "gnupg2-2.0.22-5.el7_5",
+    "package_name_big": "gnupg2",
+    "package_release": "5.el7_5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "gnupg2",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.0.22",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-4449",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-4449",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "openldap-2.4.44-15.el7_5",
+    "package_name_big": "openldap",
+    "package_release": "15.el7_5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "openldap",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.4.44",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-1739",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-1739",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "nspr-4.19.0-1.el7_5",
+    "package_name_big": "nspr",
+    "package_release": "1.el7_5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "nss",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "4.19.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-3683",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-3683",
+    "cvss_score": "6.8",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "rsyslog-8.24.0-16.el7_5.4",
+    "package_name_big": "rsyslog",
+    "package_release": "16.el7_5.4",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "rsyslog",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "8.24.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-5116",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-5116",
+    "cvss_score": "1.2",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "cairo-1.14.8-2.el7",
+    "package_name_big": "cairo",
+    "package_release": "2.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "cairo",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.14.8",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": null,
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-8637",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-8637",
+    "cvss_score": "2.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "dracut-033-535.el7_5.1.rks_6.1.1.0.3",
+    "package_name_big": "dracut",
+    "package_release": "535.el7_5.1.rks_6.1.1.0.3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "dracut",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "033",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2017-5715",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2017-5715",
+    "cvss_score": "5.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "linux-firmwar-20190812-69.git85c5d90.el7.rks_6.1.1.0.3",
+    "package_name_big": "linux-firmwar",
+    "package_release": "69.git85c5d90.el7.rks_6.1.1.0.3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "libvirt",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "linux-firmware",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "microcode_ctl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "ovmf",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "qemu-kvm",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "qemu-kvm-ma",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "qemu-kvm-rhev",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "20190812",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2011-0761",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2011-0761",
+    "cvss_score": "5.0",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "perl-4:5.16.3-292.el7",
+    "package_name_big": "perl",
+    "package_release": "292.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "perl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "4:5.16.3",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-1000845",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-1000845",
+    "cvss_score": "5.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "avahi-0.6.32-rks_6.1.1.0.4",
+    "package_name_big": "avahi",
+    "package_release": "rks_6.1.1.0.4",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "avahi",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.6.32",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": null,
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2019-0804",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2019-0804",
+    "cvss_score": "5.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "WALinuxAgen-2.2.32-1.el7.rks_6.1.1.0.3",
+    "package_name_big": "WALinuxAgen",
+    "package_release": "1.el7.rks_6.1.1.0.3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "WALinuxAgent",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.2.32",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-2073",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-2073",
+    "cvss_score": "4.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "libxml2-2.9.1-6.el7.4",
+    "package_name_big": "libxml2",
+    "package_release": "6.el7.4",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "libxml2",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.9.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": null,
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-11627",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-11627",
+    "cvss_score": "6.1",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "rabbitmq-server-3.7.8-3.rks.el7",
+    "package_name_big": "rabbitmq-server",
+    "package_release": "3.rks.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "pcs",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.7.8",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7345",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7345",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "rpm-4.11.3-32.el7",
+    "package_name_big": "rpm",
+    "package_release": "32.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "file",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "4.11.3",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "perf-3.10.0-1062.el7",
+    "package_name_big": "perf",
+    "package_release": "1062.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.10.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7440",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7440",
+    "cvss_score": "4.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "tar-2:1.26-34.el7",
+    "package_name_big": "tar",
+    "package_release": "34.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-backports-ssl_match_hostname",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-setuptools",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-virtualenv",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2:1.26",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-1692",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-1692",
+    "cvss_score": "9.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "openssh-7.4p1-11.rks_6.1.1.0.4",
+    "package_name_big": "openssh",
+    "package_release": "11.rks_6.1.1.0.4",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "openssh",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "7.4p1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "critical",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-4472",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-4472",
+    "cvss_score": "5.1",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "apr-1.4.8-3.el7_4.1",
+    "package_name_big": "apr",
+    "package_release": "3.el7_4.1",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "apr-util",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "expat",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "firefox",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "thunderbird",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "xulrunner",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.4.8",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-11627",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-11627",
+    "cvss_score": "6.1",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "nginx-1.20.2-rks_6.1.1.0.13",
+    "package_name_big": "nginx",
+    "package_release": "rks_6.1.1.0.13",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "pcs",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.20.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-7440",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-7440",
+    "cvss_score": "4.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "pam-1.1.8-rks_6.1.1.0.4",
+    "package_name_big": "pam",
+    "package_release": "rks_6.1.1.0.4",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-backports-ssl_match_hostname",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-setuptools",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-virtualenv",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1.1.8",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2016-1906",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2016-1906",
+    "cvss_score": "4.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "sed-4.2.2-5.rks_6.1.1.0.3",
+    "package_name_big": "sed",
+    "package_release": "5.rks_6.1.1.0.3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "kubernetes",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "4.2.2",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-5211",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-5211",
+    "cvss_score": "4.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "ntp-4.2.6p5-28.el7.rks_6.1.1.0.3",
+    "package_name_big": "ntp",
+    "package_release": "28.el7.rks_6.1.1.0.3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "ntp",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "4.2.6p5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-3258",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-3258",
+    "cvss_score": "8.8",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "redis-5.0.5-rks_6.1.1.0.3",
+    "package_name_big": "redis",
+    "package_release": "rks_6.1.1.0.3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "mysql-connector-java",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "5.0.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "important",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2014-9939",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2014-9939",
+    "cvss_score": "1.2",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "binutils-2.27-28.base.el7_5.1",
+    "package_name_big": "binutils",
+    "package_release": "28.base.el7_5.1",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Affected",
+        "package_name": "binutils",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.27",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-4545",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-4545",
+    "cvss_score": "2.6",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "curl-7.29.0-57.rks_6.1.1.0.3",
+    "package_name_big": "curl",
+    "package_release": "57.rks_6.1.1.0.3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "curl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "7.29.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "docker-2:1.13.1-96.gitb2f74b2.el7.centos",
+    "package_name_big": "docker",
+    "package_release": "96.gitb2f74b2.el7.centos",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2:1.13.1",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-4314",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-4314",
+    "cvss_score": "4.3",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "openssl-1:1.0.2k-13.el7.rks_6.1.1.0.5",
+    "package_name_big": "openssl",
+    "package_release": "13.el7.rks_6.1.1.0.5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "pyOpenSSL",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "1:1.0.2k",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-1569",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-1569",
+    "cvss_score": "6.8",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "acl-2.2.51-14.el7",
+    "package_name_big": "acl",
+    "package_release": "14.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "impact": "low",
+        "package_name": "icu",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.2.51",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "critical",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2011-4973",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2011-4973",
+    "cvss_score": "4.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "nss-3.36.0-7.el7_5",
+    "package_name_big": "nss",
+    "package_release": "7.el7_5",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "mod_nss",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.36.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-2099",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-2099",
+    "cvss_score": "2.6",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "daemon-0.6.4-rks_6.1.1.0.3",
+    "package_name_big": "daemon",
+    "package_release": "rks_6.1.1.0.3",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "bzr",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "python-tornado",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "0.6.4",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2010-5312",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2010-5312",
+    "cvss_score": "4.3",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "python-2.7.5-80.el7_6",
+    "package_name_big": "python",
+    "package_release": "80.el7_6",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "python-sphinx",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Will not fix",
+        "package_name": "yelp-xsl",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "2.7.5",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2013-1896",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2013-1896",
+    "cvss_score": "5.0",
+    "cvss_status": "verified",
+    "errata": [],
+    "package": "control-6.1.1.0-298",
+    "package_name_big": "control",
+    "package_release": "298",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "httpd",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "6.1.1.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "moderate",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  },
+  {
+    "cve_name": "CVE-2018-14617",
+    "cve_url": "https://access.redhat.com/security/cve/CVE-2018-14617",
+    "cvss_score": "5.5",
+    "cvss_status": "draft",
+    "errata": [],
+    "package": "kernel-3.10.0-1062.rks_6.1.1.0.5.el7",
+    "package_name_big": "kernel",
+    "package_release": "1062.rks_6.1.1.0.5.el7",
+    "package_state": [
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "kernel",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "kernel-alt",
+        "product_name": "Red Hat Enterprise Linux 7"
+      },
+      {
+        "cpe": "cpe:/o:redhat:enterprise_linux:7",
+        "fix_state": "Not affected",
+        "package_name": "kernel-rt",
+        "product_name": "Red Hat Enterprise Linux 7"
+      }
+    ],
+    "package_version": "3.10.0",
+    "platform": "enterprise_linux-7",
+    "release_image_name": "R6_1_1_VSCG_IMG",
+    "severity": "low",
+    "vulnerabilities_status": "None",
+    "vulnerabilities_url": "None"
+  }
+  ]
+}
