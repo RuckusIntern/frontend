@@ -27,6 +27,7 @@ export default function App() {
       try{
         const response = await api.get('/jsonarray')
         // const response = await api.get('/get')
+        // json-server --watch data.json --port 3300
         setCve(response.data)
       } catch (err) {
         if(err.response){
