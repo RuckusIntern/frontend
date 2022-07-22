@@ -26,6 +26,7 @@ export default function App() {
     const fetchCve = async () =>{
       try{
         const response = await api.get('/jsonarray')
+        // const response = await api.get('/get')
         setCve(response.data)
       } catch (err) {
         if(err.response){
