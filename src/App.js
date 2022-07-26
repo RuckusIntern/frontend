@@ -12,6 +12,7 @@ import Table from '@mui/material/Table'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import IconButton from '@mui/material/IconButton'
+import { TableCell } from '@mui/material'
 
 
 export default function App() {
@@ -25,8 +26,8 @@ export default function App() {
   useEffect(() => {
     const fetchCve = async () =>{
       try{
-        const response = await api.get('/jsonarray')
-        // const response = await api.get('/get')
+        // const response = await api.get('/jsonarray')
+        const response = await api.get('/get')
         // json-server --watch data.json --port 3300
         setCve(response.data)
       } catch (err) {
