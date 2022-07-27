@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  frontend-prod:
+    container_name: frontend-prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    volumes:
+      - ./src:/frontend/src
+    ports:
+      - 3000:3000
