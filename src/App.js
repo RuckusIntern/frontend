@@ -1,4 +1,5 @@
 import './App.css'
+import logo from './pic/Ruckus_logo.png'
 import api from './components/posts'
 import React, { useState, useEffect } from "react"
 // import AdminPage from './components/AdminPage'
@@ -12,7 +13,7 @@ import Table from '@mui/material/Table'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import IconButton from '@mui/material/IconButton'
-import { TableCell } from '@mui/material'
+import Divider from '@mui/material/Divider';
 
 
 export default function App() {
@@ -20,8 +21,6 @@ export default function App() {
   const [value, setValue] = useState("")
   const [searchColumns, setSearchColumns] = useState(["cve_name"])
   const [open, setOpen] = useState(false)
-  const [editComment, setEditComment] = useState('')
-  const [editSolution, setEditSolution] = useState('')
 
   useEffect(() => {
     const fetchCve = async () =>{
@@ -58,9 +57,8 @@ export default function App() {
   const columns = cves[0] && Object.keys(cves[0])
   // error function gives previuos state
   return (
-
     <Container maxWidth="xl" className="container">
-      <br></br>
+      <img src={logo} alt="Logo" />
       <Typography variant="h4" component="div" gutterBottom>
       Vulnerability Database
         <IconButton
@@ -83,9 +81,10 @@ export default function App() {
           </Box>
         </Collapse>
       </Typography>
-      <div className='App'> 
+      <Divider />
+      <div className='App' > 
         <input type="text" value={value} placeholder="Search" onChange={(e) => setValue(e.target.value)}/>
-        <br></br>
+        <br />
         {columns &&
           columns.map((column) => (
             <label>
@@ -102,6 +101,7 @@ export default function App() {
             </label>
         ))}
       </div>
+      <Divider />
       {/* <AdminPage data = {search(cves)}/> */}
       <AffectedPackage data = {search(cves)}/>
       {/* <CVEPage data = {search(cves)}/> */}

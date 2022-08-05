@@ -78,7 +78,7 @@ export default function AffectedPackage({data}) {
 
 
   return (
-    <Paper sx={{display: 'flex', flexWrap: 'wrap', width: '95%', maxHeight: '30%' }}>
+    <Paper sx={{display: 'flex', flexWrap: 'wrap', width: '100%', maxHeight: '30%' }}>
       <TableContainer compinent={Paper} sx={{display: 'flex', flexWrap: 'wrap', width: '100%', maxHeight: 500}}>
         <form onSubmit={handleEditFormSubmit}>
           <Table stickyHeader aria-label="sticky table" sx = {{ maxHeight: 20 }}>
