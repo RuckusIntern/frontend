@@ -87,10 +87,10 @@ const ReadOnlyRow = ({ cve, handleEditClick }) => {
                                 <TableRow>
                                     <TableCell align="center" style={{ minWidth: 140 }}>Package</TableCell>
                                     <TableCell align="center" style={{ minWidth: 140 }}>Package Name</TableCell>
-                                    <TableCell align="center" style={{ minWidth: 170 }}>CPE</TableCell>
+                                    <TableCell align="center" style={{ minWidth: 180 }}>CPE</TableCell>
                                     <TableCell align="center" style={{ minWidth: 80 }}>Fix Status</TableCell>
                                     <TableCell align="center" style={{ minWidth: 80 }}>Impact</TableCell>
-                                    <TableCell align="center" style={{ minWidth: 170 }}>Platform Name</TableCell>
+                                    <TableCell align="center" style={{ minWidth: 180 }}>Platform Name</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
